@@ -18,6 +18,11 @@ echo 'alias kubectl="minikube kubectl --"' | sudo tee -a /etc/bash.bashrc > /dev
 # strat minikube as a docker container
 minikube start --driver=docker
 
+echo "minikube installed"
+
+echo "/nkubectl get pods/n"
+minikube kubectl -- get pods
+
 newgrp docker # refresh the groups for the current user
 
-echo "minikube installed"
+
