@@ -1,7 +1,7 @@
 # `Minikube-setup`
 * automating the setup of minikube with scripts
 ## Minikube as Docker container --driver=docker :
-* the script check if docker is installed if not it installs it along with minikube and start the
+* the script check if docker is installed if not it installs it along with minikube and start the cluster
 * view script <a href="./minikube-container.sh">here</a> 
 ## Minikube as a VM --driver=none :
 * work in progress ...
