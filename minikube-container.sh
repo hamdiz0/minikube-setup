@@ -15,14 +15,5 @@ sudo install minikube-linux-amd64 /usr/local/bin/minikube && rm minikube-linux-a
 # make youre life esier with this alias
 echo 'alias kubectl="minikube kubectl --"' | sudo tee -a /etc/bash.bashrc > /dev/null
 
-# strat minikube as a docker container
-minikube start --driver=docker
-
-echo "minikube installed"
-
-echo "/nkubectl get pods/n"
-minikube kubectl -- get pods
-
-newgrp docker # refresh the groups for the current user
-
-
+# refresh the groups for the current user
+newgrp docker 
